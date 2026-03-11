@@ -1,0 +1,155 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deora Computer Centre | Faridkot</title>
+    <style>
+        /* Modern Color Palette */
+        :root {
+            --primary: #d32f2f; /* Professional Red */
+            --secondary: #1976d2; /* Trustworthy Blue */
+            --dark: #212121;
+            --light: #ffffff;
+            --accent: #ffeb3b; /* Attention Yellow */
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: #f9f9f9; color: #333; }
+
+        /* Admission Alert Bar */
+        .admission-bar {
+            background: var(--accent);
+            color: #000;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #000;
+        }
+
+        /* Header & Nav */
+        header { background: var(--light); padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .logo-area h1 { color: var(--primary); font-size: 24px; }
+        .logo-area span { color: var(--secondary); font-size: 14px; display: block; }
+        
+        nav a { text-decoration: none; color: var(--dark); margin-left: 20px; font-weight: 600; }
+        nav a:hover { color: var(--primary); }
+
+        /* Hero Section */
+        .hero { 
+            background: linear-gradient(45deg, rgba(25, 118, 210, 0.9), rgba(211, 47, 47, 0.8)), url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover; color: white; padding: 100px 5%; text-align: center;
+        }
+        .hero h2 { font-size: 40px; margin-bottom: 15px; }
+        .hero p { font-size: 18px; margin-bottom: 25px; }
+        .cta-btn { background: var(--accent); color: #000; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 50px; font-size: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+
+        /* Course Grid */
+        .container { max-width: 1200px; margin: 50px auto; padding: 0 20px; }
+        .section-title { text-align: center; margin-bottom: 40px; position: relative; padding-bottom: 10px; }
+        .section-title::after { content: ''; width: 60px; height: 4px; background: var(--primary); position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); }
+
+        .course-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .card { background: white; padding: 25px; border-radius: 12px; transition: 0.3s; border: 1px solid #eee; position: relative; overflow: hidden; }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .card h3 { color: var(--secondary); margin-bottom: 10px; }
+        .card ul { list-style: none; font-size: 14px; color: #666; }
+        .card ul li::before { content: '✓ '; color: green; font-weight: bold; }
+
+        /* Footer */
+        footer { background: var(--dark); color: white; padding: 40px 5%; text-align: center; margin-top: 50px; }
+        .contact-info { margin-top: 20px; color: #bbb; }
+    </style>
+</head>
+<body>
+
+    <div class="admission-bar">
+        ⚡ Admissions Open for 2026 Batch! Enroll Now and Get a 10% Discount ⚡
+    </div>
+
+    <header>
+        <div class="logo-area">
+            <h1>DEORA COMPUTER CENTRE</h1>
+            <span>Premier Education Hub in Faridkot</span>
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#courses">Courses</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h2>Upgrade Your Skills with Deora</h2>
+        <p>Expert Training in ADCA, DCA, Typing (English/Punjabi), & Modern Coding</p>
+        <a href="tel:+9198XXX-XXXXX" class="cta-btn">Admission Start Now</a>
+    </section>
+
+    <div class="container" id="courses">
+        <h2 class="section-title">Professional Courses</h2>
+        <div class="course-grid">
+            
+            <div class="card">
+                <h3>ADCA</h3>
+                <p>Advance Diploma in Computer Application</p>
+                <ul>
+                    <li>1 Year Course</li>
+                    <li>Software Installation</li>
+                    <li>Web Design Basics</li>
+                    <li>Advanced Tally Prime</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>DCA</h3>
+                <p>Diploma in Computer Application</p>
+                <ul>
+                    <li>6 Months Course</li>
+                    <li>MS Office (Word, Excel, PPT)</li>
+                    <li>Internet & Emails</li>
+                    <li>Windows Operating</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Professional Typing</h3>
+                <p>English & Punjabi (Raavi/Asees)</p>
+                <ul>
+                    <li>Speed Building Techniques</li>
+                    <li>Government Exam Preparation</li>
+                    <li>Daily Practice Sessions</li>
+                    <li>Certification Provided</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Creative & Technical</h3>
+                <p>Modern Career Skills</p>
+                <ul>
+                    <li>Adobe Photoshop Mastery</li>
+                    <li>Coding (HTML, CSS, Python)</li>
+                    <li>Office Management</li>
+                    <li>Data Entry Specialist</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <section class="container" id="contact" style="text-align: center;">
+        <h2 class="section-title">Visit Our Campus</h2>
+        <div style="background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+            <p><strong>Address:</strong> Near [Landmark], Faridkot, Punjab</p>
+            <p><strong>Mobile:</strong> +91 98XXX XXXXX | <strong>Email:</strong> deora.faridkot@gmail.com</p>
+            <p style="margin-top: 20px; font-style: italic;">"Developing Digital Leaders Since [Year]"</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Deora Computer Centre Faridkot. All Rights Reserved.</p>
+        <div class="contact-info">Designed for Educational Excellence</div>
+    </footer>
+
+</body>
+</html>
